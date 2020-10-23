@@ -57,22 +57,22 @@ function Detail() {
   }
 
   useEffect(() => {
-    // exists in global state
+
     if (products.length) {
       setCurrentProduct(products.find(product => product._id === id));
     } 
-    // retrieve from server
+  
     else if (data) {
       dispatch({
         type: UPDATE_PRODUCTS,
         products: data.products
       });
-      // store to indexDb
+
       data.products.forEach((product) => {
         idbPromise('products', 'put', product);
       });
     }
-    // no connection, get from cache in indexDB 
+    
     else if(!loading){
       idbPromise('products','get').then((indexedProducts)=> {
         dispatch({
