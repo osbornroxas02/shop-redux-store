@@ -6,9 +6,10 @@
 ## Table of Contents 
 
 | [Description](#description) |
+| [Assignment Goal](#assignment-goal) |
 | [How To USe](#how-to-use)|
-| [License](#license) |
 | [Author Info](#author-info) |
+| [License](#license) |
 
 
 ---
@@ -36,14 +37,17 @@ THEN I find that the app uses Redux instead of the Context API
 
 ## How To Use
 
-In your root folder of the ternminal input. Run this command to install json packages
-> npm install
+In your root folder of the ternminal run these commands
 
- then run this to seed the db
+> npm install
+to install json packages
+
  > npm run seed
- 
-Then run this command to start your borswer
-> npm start 
+ to seed the db
+
+ > npm start 
+ to start and connect your borwser to http://localhost:3000/
+
  
 ---
 
